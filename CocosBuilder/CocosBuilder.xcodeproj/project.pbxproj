@@ -164,7 +164,6 @@
 		E32FA2F816D5781600254653 /* seq-row-channel-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = E32FA2F716D5781600254653 /* seq-row-channel-bg.png */; };
 		E334069715517225000FBD0B /* InspectorFloatScale.xib in Resources */ = {isa = PBXBuildFile; fileRef = E334069615517225000FBD0B /* InspectorFloatScale.xib */; };
 		E334069B1551725F000FBD0B /* InspectorFloatScale.m in Sources */ = {isa = PBXBuildFile; fileRef = E334069A1551725F000FBD0B /* InspectorFloatScale.m */; };
-		E334742F169DC9E0000737CC /* jsdoc in Resources */ = {isa = PBXBuildFile; fileRef = E334742E169DC9E0000737CC /* jsdoc */; };
 		E334A4DE170CF475001604F7 /* seq-btn-end.png in Resources */ = {isa = PBXBuildFile; fileRef = E334A4DC170CF475001604F7 /* seq-btn-end.png */; };
 		E334A4DF170CF475001604F7 /* toolbar-bottom-noborder.png in Resources */ = {isa = PBXBuildFile; fileRef = E334A4DD170CF475001604F7 /* toolbar-bottom-noborder.png */; };
 		E334A4E4170CFDE3001604F7 /* CCBTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E334A4E3170CFDE3001604F7 /* CCBTextField.m */; };
@@ -1067,7 +1066,6 @@
 		E334069615517225000FBD0B /* InspectorFloatScale.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InspectorFloatScale.xib; sourceTree = "<group>"; };
 		E33406991551725F000FBD0B /* InspectorFloatScale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InspectorFloatScale.h; sourceTree = "<group>"; };
 		E334069A1551725F000FBD0B /* InspectorFloatScale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InspectorFloatScale.m; sourceTree = "<group>"; };
-		E334742E169DC9E0000737CC /* jsdoc */ = {isa = PBXFileReference; lastKnownFileType = folder; name = jsdoc; path = ../../jsdoc; sourceTree = "<group>"; };
 		E334A4DC170CF475001604F7 /* seq-btn-end.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "seq-btn-end.png"; sourceTree = "<group>"; };
 		E334A4DD170CF475001604F7 /* toolbar-bottom-noborder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toolbar-bottom-noborder.png"; sourceTree = "<group>"; };
 		E334A4E2170CFDE3001604F7 /* CCBTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBTextField.h; sourceTree = "<group>"; };
@@ -2453,7 +2451,6 @@
 			children = (
 				E373BF1017189D2E00D71602 /* autoCompleteDefinitions */,
 				E390C780170A371E003E9E92 /* version */,
-				E334742E169DC9E0000737CC /* jsdoc */,
 				E3D71E4A1669410700D9E638 /* defaultProjectResources */,
 				E3618D57166562DA009F5805 /* publishTemplates */,
 				E35DBBDD14F3D1830070A6E4 /* Configurations */,
@@ -4432,7 +4429,6 @@
 				E35D78D616826C0100A53BEF /* SpriteSheetSettingsWindow.xib in Resources */,
 				E3DEF5B7169B359C00B9DCF4 /* lame in Resources */,
 				E3DEF5B9169B35DF00B9DCF4 /* lame-COPYING in Resources */,
-				E334742F169DC9E0000737CC /* jsdoc in Resources */,
 				E3F4087416A9EEC5009A0253 /* ccz in Resources */,
 				E312EDC616AF71FE000778C8 /* CCBReaderInternalRenamedProps.plist in Resources */,
 				E3E8D64616B3129E00742107 /* oggenc in Resources */,
