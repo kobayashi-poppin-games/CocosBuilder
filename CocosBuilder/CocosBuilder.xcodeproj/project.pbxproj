@@ -189,7 +189,6 @@
 		E33C2AB515CAE2590043EF9B /* SequencerStretchWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E33C2AB415CAE2580043EF9B /* SequencerStretchWindow.xib */; };
 		E33C2AB815CAE3980043EF9B /* SequencerStretchWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = E33C2AB715CAE3960043EF9B /* SequencerStretchWindow.m */; };
 		E33C2ABA15CBF2580043EF9B /* seq-keyframe-hint.png in Resources */ = {isa = PBXBuildFile; fileRef = E33C2AB915CBF2580043EF9B /* seq-keyframe-hint.png */; };
-		E33C2B2615CD56020043EF9B /* MGSFragaria.framework in Copy Files (Sparkle framework) */ = {isa = PBXBuildFile; fileRef = E3F541CC15AED68500EAAFBD /* MGSFragaria.framework */; };
 		E34039BE1624BF610067C7B8 /* CCBDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = E34039BD1624BF610067C7B8 /* CCBDocumentController.m */; };
 		E3462867155BF6C50043EAB1 /* ResourceManagerOutlineHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E3462866155BF6C50043EAB1 /* ResourceManagerOutlineHandler.m */; };
 		E346286B155C18D80043EAB1 /* SavePanelLimiter.m in Sources */ = {isa = PBXBuildFile; fileRef = E346286A155C18D80043EAB1 /* SavePanelLimiter.m */; };
@@ -364,7 +363,6 @@
 		E36F3C3D152C756D00AAD805 /* NSString+RelativePath.m in Sources */ = {isa = PBXBuildFile; fileRef = E36F3C3C152C756D00AAD805 /* NSString+RelativePath.m */; };
 		E370BA0C1549B2460048ED73 /* scale-0.png in Resources */ = {isa = PBXBuildFile; fileRef = E370BA0A1549B2460048ED73 /* scale-0.png */; };
 		E370BA0D1549B2460048ED73 /* scale-1.png in Resources */ = {isa = PBXBuildFile; fileRef = E370BA0B1549B2460048ED73 /* scale-1.png */; };
-		E373BF0D17188FC000D71602 /* JavaScriptAutoCompleteHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E373BF0C17188FC000D71602 /* JavaScriptAutoCompleteHandler.m */; };
 		E373BF1117189D2E00D71602 /* autoCompleteDefinitions in Resources */ = {isa = PBXBuildFile; fileRef = E373BF1017189D2E00D71602 /* autoCompleteDefinitions */; };
 		E3748303171F83A300486659 /* editor-jump.png in Resources */ = {isa = PBXBuildFile; fileRef = E3748302171F83A300486659 /* editor-jump.png */; };
 		E3799EA6155970F400196B4A /* ProjectSettingsWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3799EA5155970F400196B4A /* ProjectSettingsWindow.xib */; };
@@ -387,7 +385,6 @@
 		E385A41E14F6993E00DFB12D /* CCBPMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = E385A41D14F6993E00DFB12D /* CCBPMenu.m */; };
 		E385A42014F69FF300DFB12D /* InspectorBlock.xib in Resources */ = {isa = PBXBuildFile; fileRef = E385A41F14F69FF300DFB12D /* InspectorBlock.xib */; };
 		E385A42314F6A01900DFB12D /* InspectorBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = E385A42214F6A01900DFB12D /* InspectorBlock.m */; };
-		E38654B0171771DA00A345B9 /* JavaScriptVariableExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = E38654AF171771DA00A345B9 /* JavaScriptVariableExtractor.m */; };
 		E388FD19171F03C7002548ED /* editor-border.png in Resources */ = {isa = PBXBuildFile; fileRef = E388FD18171F03C7002548ED /* editor-border.png */; };
 		E3893C971666B9F500299482 /* CCClippingNode.m in Sources */ = {isa = PBXBuildFile; fileRef = E3893C8C1666B9F500299482 /* CCClippingNode.m */; };
 		E3893C981666B9F500299482 /* CCDrawNode.m in Sources */ = {isa = PBXBuildFile; fileRef = E3893C8E1666B9F500299482 /* CCDrawNode.m */; };
@@ -535,8 +532,6 @@
 		E3D71E4B1669410800D9E638 /* defaultProjectResources in Resources */ = {isa = PBXBuildFile; fileRef = E3D71E4A1669410700D9E638 /* defaultProjectResources */; };
 		E3D839DC171356EC004F6127 /* pngquant in Resources */ = {isa = PBXBuildFile; fileRef = E3D839DA171356EC004F6127 /* pngquant */; };
 		E3D839DD171356EC004F6127 /* pngquant-COPYING in Resources */ = {isa = PBXBuildFile; fileRef = E3D839DB171356EC004F6127 /* pngquant-COPYING */; };
-		E3D839E01713A70D004F6127 /* nodejs in Resources */ = {isa = PBXBuildFile; fileRef = E3D839DF1713A70D004F6127 /* nodejs */; };
-		E3D839E31713A75B004F6127 /* JavaScriptSyntaxChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = E3D839E21713A75B004F6127 /* JavaScriptSyntaxChecker.m */; };
 		E3DA6FEE16CAEC7800B12FFB /* SequencerPopoverHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E3DA6FED16CAEC7800B12FFB /* SequencerPopoverHandler.m */; };
 		E3DA6FF216CAF7D400B12FFB /* SequencerPopoverView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3DA6FF116CAF7D400B12FFB /* SequencerPopoverView.xib */; };
 		E3DA6FF416CB293100B12FFB /* InspectorPopoverPosition.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3DA6FF316CB293000B12FFB /* InspectorPopoverPosition.xib */; };
@@ -599,9 +594,6 @@
 		E3F3F849153DB893005443EE /* notes-close.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F3F848153DB893005443EE /* notes-close.png */; };
 		E3F3F84B153DBA43005443EE /* notes-close-down.png in Resources */ = {isa = PBXBuildFile; fileRef = E3F3F84A153DBA43005443EE /* notes-close-down.png */; };
 		E3F4087416A9EEC5009A0253 /* ccz in Resources */ = {isa = PBXBuildFile; fileRef = E3F4087316A9EEC5009A0253 /* ccz */; };
-		E3F541CF15AED86800EAAFBD /* MGSFragaria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F541CC15AED68500EAAFBD /* MGSFragaria.framework */; };
-		E3F541D415AF04E600EAAFBD /* JavaScriptDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F541D215AF04E600EAAFBD /* JavaScriptDocument.m */; };
-		E3F541D515AF04E600EAAFBD /* JavaScriptDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3F541D315AF04E600EAAFBD /* JavaScriptDocument.xib */; };
 		E3F59CCE15B5B7560015523B /* PlayerConsolePairingWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3F59CCD15B5B7560015523B /* PlayerConsolePairingWindow.xib */; };
 		E3F59CD115B5B9330015523B /* PlayerConsolePairingWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F59CD015B5B9330015523B /* PlayerConsolePairingWindow.m */; };
 		E3F73DB61593908A00D74084 /* SequencerDurationWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F73DB51593908A00D74084 /* SequencerDurationWindow.m */; };
@@ -739,34 +731,6 @@
 			remoteGlobalIDString = E3D59120150F5367004180CA;
 			remoteInfo = CCBFile;
 		};
-		E3F541C715AED68500EAAFBD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E3F541BC15AED68500EAAFBD /* Fragaria.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = AB648E2A11FB385700AEF7BD;
-			remoteInfo = "Fragaria Document Based App";
-		};
-		E3F541C915AED68500EAAFBD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E3F541BC15AED68500EAAFBD /* Fragaria.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8D1107320486CEB800E47090;
-			remoteInfo = Fragaria;
-		};
-		E3F541CB15AED68500EAAFBD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E3F541BC15AED68500EAAFBD /* Fragaria.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = AB69B62B118B745700903D1D;
-			remoteInfo = MGSFragaria;
-		};
-		E3F541CD15AED85800EAAFBD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E3F541BC15AED68500EAAFBD /* Fragaria.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = AB69B62A118B745700903D1D;
-			remoteInfo = MGSFragaria;
-		};
 		E3FCE8721524859A0028E8E7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7789ABB5133AA82000CEFCC7 /* Project object */;
@@ -783,7 +747,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E33C2B2615CD56020043EF9B /* MGSFragaria.framework in Copy Files (Sparkle framework) */,
 				E33BC1981510B9DE009AE29A /* Sparkle.framework in Copy Files (Sparkle framework) */,
 			);
 			name = "Copy Files (Sparkle framework)";
@@ -1421,8 +1384,6 @@
 		E36F3C3C152C756D00AAD805 /* NSString+RelativePath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RelativePath.m"; sourceTree = "<group>"; };
 		E370BA0A1549B2460048ED73 /* scale-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scale-0.png"; sourceTree = "<group>"; };
 		E370BA0B1549B2460048ED73 /* scale-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scale-1.png"; sourceTree = "<group>"; };
-		E373BF0B17188FC000D71602 /* JavaScriptAutoCompleteHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JavaScriptAutoCompleteHandler.h; sourceTree = "<group>"; };
-		E373BF0C17188FC000D71602 /* JavaScriptAutoCompleteHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JavaScriptAutoCompleteHandler.m; sourceTree = "<group>"; };
 		E373BF1017189D2E00D71602 /* autoCompleteDefinitions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = autoCompleteDefinitions; sourceTree = "<group>"; };
 		E3748302171F83A300486659 /* editor-jump.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "editor-jump.png"; sourceTree = "<group>"; };
 		E3799EA5155970F400196B4A /* ProjectSettingsWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProjectSettingsWindow.xib; sourceTree = "<group>"; };
@@ -1459,8 +1420,6 @@
 		E385A41F14F69FF300DFB12D /* InspectorBlock.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InspectorBlock.xib; sourceTree = "<group>"; };
 		E385A42114F6A01900DFB12D /* InspectorBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InspectorBlock.h; sourceTree = "<group>"; };
 		E385A42214F6A01900DFB12D /* InspectorBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InspectorBlock.m; sourceTree = "<group>"; };
-		E38654AE171771DA00A345B9 /* JavaScriptVariableExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JavaScriptVariableExtractor.h; sourceTree = "<group>"; };
-		E38654AF171771DA00A345B9 /* JavaScriptVariableExtractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JavaScriptVariableExtractor.m; sourceTree = "<group>"; };
 		E388FD18171F03C7002548ED /* editor-border.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "editor-border.png"; sourceTree = "<group>"; };
 		E3893C8B1666B9F500299482 /* CCClippingNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCClippingNode.h; sourceTree = "<group>"; };
 		E3893C8C1666B9F500299482 /* CCClippingNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCClippingNode.m; sourceTree = "<group>"; };
@@ -1685,9 +1644,6 @@
 		E3D71E4A1669410700D9E638 /* defaultProjectResources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = defaultProjectResources; sourceTree = "<group>"; };
 		E3D839DA171356EC004F6127 /* pngquant */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = pngquant; sourceTree = "<group>"; };
 		E3D839DB171356EC004F6127 /* pngquant-COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "pngquant-COPYING"; sourceTree = "<group>"; };
-		E3D839DF1713A70D004F6127 /* nodejs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = nodejs; sourceTree = "<group>"; };
-		E3D839E11713A75B004F6127 /* JavaScriptSyntaxChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JavaScriptSyntaxChecker.h; sourceTree = "<group>"; };
-		E3D839E21713A75B004F6127 /* JavaScriptSyntaxChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JavaScriptSyntaxChecker.m; sourceTree = "<group>"; };
 		E3DA6FEC16CAEC7800B12FFB /* SequencerPopoverHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SequencerPopoverHandler.h; sourceTree = "<group>"; };
 		E3DA6FED16CAEC7800B12FFB /* SequencerPopoverHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SequencerPopoverHandler.m; sourceTree = "<group>"; };
 		E3DA6FF116CAF7D400B12FFB /* SequencerPopoverView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SequencerPopoverView.xib; sourceTree = "<group>"; };
@@ -1766,10 +1722,6 @@
 		E3F3F848153DB893005443EE /* notes-close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "notes-close.png"; sourceTree = "<group>"; };
 		E3F3F84A153DBA43005443EE /* notes-close-down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "notes-close-down.png"; sourceTree = "<group>"; };
 		E3F4087316A9EEC5009A0253 /* ccz */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ccz; sourceTree = "<group>"; };
-		E3F541BC15AED68500EAAFBD /* Fragaria.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Fragaria.xcodeproj; path = Fragaria/Fragaria.xcodeproj; sourceTree = "<group>"; };
-		E3F541D115AF04E600EAAFBD /* JavaScriptDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JavaScriptDocument.h; sourceTree = "<group>"; };
-		E3F541D215AF04E600EAAFBD /* JavaScriptDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JavaScriptDocument.m; sourceTree = "<group>"; };
-		E3F541D315AF04E600EAAFBD /* JavaScriptDocument.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JavaScriptDocument.xib; sourceTree = "<group>"; };
 		E3F59CCD15B5B7560015523B /* PlayerConsolePairingWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerConsolePairingWindow.xib; sourceTree = "<group>"; };
 		E3F59CCF15B5B9330015523B /* PlayerConsolePairingWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerConsolePairingWindow.h; sourceTree = "<group>"; };
 		E3F59CD015B5B9330015523B /* PlayerConsolePairingWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerConsolePairingWindow.m; sourceTree = "<group>"; };
@@ -1820,7 +1772,6 @@
 				E3A4747A16D43BEA00DB0D61 /* OpenAL.framework in Frameworks */,
 				E3A4747816D43B5800DB0D61 /* AudioToolbox.framework in Frameworks */,
 				E3B19F6B15E62ADA000B023E /* Carbon.framework in Frameworks */,
-				E3F541CF15AED86800EAAFBD /* MGSFragaria.framework in Frameworks */,
 				E3E0879015669FA2008F1FDB /* libffi.dylib in Frameworks */,
 				E3E0878E15669F58008F1FDB /* JavaScriptCore.framework in Frameworks */,
 				776A37161395925D00960E94 /* Quartz.framework in Frameworks */,
@@ -2394,7 +2345,6 @@
 				776041EA1498FB600078095D /* Dialogs */,
 				E3B7BC9D15E3B97900CF95EF /* Toolbar */,
 				E390C77A170A2C20003E9E92 /* About Box */,
-				E3F541D015AF040A00EAAFBD /* JavaScript Editor */,
 				E35A136315B0392800C9AA15 /* Player Connection */,
 				E3B7AEE614E33E5700DFD402 /* Inspector Properties */,
 				E3214C3F15D3B9D0002413A7 /* Custom Properties */,
@@ -2425,7 +2375,6 @@
 			children = (
 				92BB440F1AF79992000099C0 /* CCControlExtension */,
 				A77EF593171FD31400451DA4 /* WebP */,
-				E3D839DF1713A70D004F6127 /* nodejs */,
 				E3D839DE171356F1004F6127 /* pngquant */,
 				E3A4745D16D4389D00DB0D61 /* CocosDenshion */,
 				E3E8D64316B3128600742107 /* Ogg compression */,
@@ -2433,7 +2382,6 @@
 				E3DEF5B5169B358500B9DCF4 /* Lame */,
 				E380B24A1642FC240006D31C /* Tupac */,
 				E35A134E15B038D700C9AA15 /* ThoMoNetworking */,
-				E3F541BA15AED66D00EAAFBD /* Fragaria */,
 				E3E087611566907F008F1FDB /* JSCocoa */,
 				E32BBCAA156135C300C58395 /* HashValue */,
 				E36A270F152263B4004986A8 /* cocos2d */,
@@ -3757,40 +3705,6 @@
 			name = "CCZ compression";
 			sourceTree = "<group>";
 		};
-		E3F541BA15AED66D00EAAFBD /* Fragaria */ = {
-			isa = PBXGroup;
-			children = (
-				E3F541BC15AED68500EAAFBD /* Fragaria.xcodeproj */,
-			);
-			name = Fragaria;
-			sourceTree = "<group>";
-		};
-		E3F541BD15AED68500EAAFBD /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E3F541C815AED68500EAAFBD /* Fragaria Document Based App.app */,
-				E3F541CA15AED68500EAAFBD /* Fragaria.app */,
-				E3F541CC15AED68500EAAFBD /* MGSFragaria.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		E3F541D015AF040A00EAAFBD /* JavaScript Editor */ = {
-			isa = PBXGroup;
-			children = (
-				E3F541D115AF04E600EAAFBD /* JavaScriptDocument.h */,
-				E3F541D215AF04E600EAAFBD /* JavaScriptDocument.m */,
-				E3F541D315AF04E600EAAFBD /* JavaScriptDocument.xib */,
-				E3D839E11713A75B004F6127 /* JavaScriptSyntaxChecker.h */,
-				E3D839E21713A75B004F6127 /* JavaScriptSyntaxChecker.m */,
-				E38654AE171771DA00A345B9 /* JavaScriptVariableExtractor.h */,
-				E38654AF171771DA00A345B9 /* JavaScriptVariableExtractor.m */,
-				E373BF0B17188FC000D71602 /* JavaScriptAutoCompleteHandler.h */,
-				E373BF0C17188FC000D71602 /* JavaScriptAutoCompleteHandler.m */,
-			);
-			name = "JavaScript Editor";
-			sourceTree = "<group>";
-		};
 		E3FCE8681524856D0028E8E7 /* CCScrollView */ = {
 			isa = PBXGroup;
 			children = (
@@ -3846,7 +3760,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				E3F541CE15AED85800EAAFBD /* PBXTargetDependency */,
 				E398C02F14FB82090078E771 /* PBXTargetDependency */,
 				E3B7AED314E31AEF00DFD402 /* PBXTargetDependency */,
 				E3C365F814E9E4DD007CD5FF /* PBXTargetDependency */,
@@ -4176,12 +4089,6 @@
 			mainGroup = 7789ABB3133AA82000CEFCC7;
 			productRefGroup = 7789ABBF133AA82000CEFCC7 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = E3F541BD15AED68500EAAFBD /* Products */;
-					ProjectRef = E3F541BC15AED68500EAAFBD /* Fragaria.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				E398C02114FB81A30078E771 /* Cocos2D iPhone */,
@@ -4205,30 +4112,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		E3F541C815AED68500EAAFBD /* Fragaria Document Based App.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = "Fragaria Document Based App.app";
-			remoteRef = E3F541C715AED68500EAAFBD /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E3F541CA15AED68500EAAFBD /* Fragaria.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = Fragaria.app;
-			remoteRef = E3F541C915AED68500EAAFBD /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E3F541CC15AED68500EAAFBD /* MGSFragaria.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = MGSFragaria.framework;
-			remoteRef = E3F541CB15AED68500EAAFBD /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7789ABBC133AA82000CEFCC7 /* Resources */ = {
@@ -4392,7 +4275,6 @@
 				E3DFA7CD15ACA0CD005D3B6F /* frame-android-medium.png in Resources */,
 				E3DFA7CE15ACA0CD005D3B6F /* frame-android-small.png in Resources */,
 				E3DFA7CF15ACA0CD005D3B6F /* frame-android-xsmall.png in Resources */,
-				E3F541D515AF04E600EAAFBD /* JavaScriptDocument.xib in Resources */,
 				E35A146715B0A54A00C9AA15 /* PlayerConsoleWindow.xib in Resources */,
 				E3E2704815B18CF500287470 /* TB_play.png in Resources */,
 				E3E2704915B18CF500287470 /* TB_stop.png in Resources */,
@@ -4453,7 +4335,6 @@
 				E334A4E6170D0020001604F7 /* debugger-bug.png in Resources */,
 				E3D839DC171356EC004F6127 /* pngquant in Resources */,
 				E3D839DD171356EC004F6127 /* pngquant-COPYING in Resources */,
-				E3D839E01713A70D004F6127 /* nodejs in Resources */,
 				E38F79361715FD8D00E299E4 /* editor-warning.png in Resources */,
 				E373BF1117189D2E00D71602 /* autoCompleteDefinitions in Resources */,
 				E3C12B1F171E0DE7001EEDDB /* editor-check.png in Resources */,
@@ -4875,7 +4756,6 @@
 				E3FD4DDF15A455B90032C2DD /* SequencerSequenceArrayController.m in Sources */,
 				E3DFA79115AC9DD3005D3B6F /* ccCArray.m in Sources */,
 				E3DFA7B115AC9DE1005D3B6F /* CCNode+Debug.m in Sources */,
-				E3F541D415AF04E600EAAFBD /* JavaScriptDocument.m in Sources */,
 				E35A135F15B038D700C9AA15 /* ThoMoClientStub.m in Sources */,
 				E35A136015B038D700C9AA15 /* ThoMoNetworkStub.m in Sources */,
 				E35A136115B038D700C9AA15 /* ThoMoServerStub.m in Sources */,
@@ -4927,9 +4807,6 @@
 				E390C77E170A2C9B003E9E92 /* AboutWindow.m in Sources */,
 				E334A4E4170CFDE3001604F7 /* CCBTextField.m in Sources */,
 				E398541A170D2409000F4465 /* DebuggerTextField.m in Sources */,
-				E3D839E31713A75B004F6127 /* JavaScriptSyntaxChecker.m in Sources */,
-				E38654B0171771DA00A345B9 /* JavaScriptVariableExtractor.m in Sources */,
-				E373BF0D17188FC000D71602 /* JavaScriptAutoCompleteHandler.m in Sources */,
 				E3C12B1B171DD386001EEDDB /* NSWindow+CCBAccessoryView.m in Sources */,
 				92BB442E1AF79992000099C0 /* CCControl.m in Sources */,
 				E37FCAF4175D68FF009F81D6 /* ResourceManagerPreviewView.m in Sources */,
@@ -5144,11 +5021,6 @@
 			isa = PBXTargetDependency;
 			target = E3D59120150F5367004180CA /* CCBFile */;
 			targetProxy = E3D5912D150F53CD004180CA /* PBXContainerItemProxy */;
-		};
-		E3F541CE15AED85800EAAFBD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MGSFragaria;
-			targetProxy = E3F541CD15AED85800EAAFBD /* PBXContainerItemProxy */;
 		};
 		E3FCE8731524859A0028E8E7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

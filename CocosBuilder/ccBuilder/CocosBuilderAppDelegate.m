@@ -74,7 +74,7 @@
 #import "SequencerKeyframe.h"
 #import "SequencerKeyframeEasing.h"
 #import "SequencerKeyframeEasingWindow.h"
-#import "JavaScriptDocument.h"
+
 #import "PlayerConnection.h"
 #import "PlayerConsoleWindow.h"
 #import "SequencerUtil.h"
@@ -92,7 +92,7 @@
 #import "SpriteSheetSettingsWindow.h"
 #import "AboutWindow.h"
 
-#import "JavaScriptAutoCompleteHandler.h"
+
 #import "CCBFileUtil.h"
 #import "ResourceManagerPreviewView.h"
 
@@ -265,14 +265,7 @@ static CocosBuilderAppDelegate* sharedAppDelegate;
     [window addChildWindow:guiWindow ordered:NSWindowAbove];
 }
 
-- (void) setupAutoCompleteHandler
-{
-    JavaScriptAutoCompleteHandler* handler = [JavaScriptAutoCompleteHandler sharedAutoCompleteHandler];
-    
-    NSString* dir = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"autoCompleteDefinitions"];
-    
-    [handler loadGlobalFilesFromDirectory:dir];
-}
+
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
@@ -283,8 +276,6 @@ static CocosBuilderAppDelegate* sharedAppDelegate;
     loadedSelectedNodes = [[NSMutableArray alloc] init];
     
     sharedAppDelegate = self;
-    
-    [self setupAutoCompleteHandler];
     
     [[NSExceptionHandler defaultExceptionHandler] setExceptionHandlingMask: NSLogUncaughtExceptionMask | NSLogUncaughtSystemExceptionMask | NSLogUncaughtRuntimeErrorMask];
     
@@ -1281,7 +1272,7 @@ static BOOL hideAllToNextSeparator;
         }
     }
     
-    [[JavaScriptAutoCompleteHandler sharedAutoCompleteHandler] removeLocalFiles];
+
     
     [window setTitle:@"CocosBuilder"];
     
@@ -1320,14 +1311,7 @@ static BOOL hideAllToNextSeparator;
     BOOL success = [self checkForTooManyDirectoriesInCurrentProject];
     
     if (!success) return NO;
-    
-    // Load autocompletions for all JS files
-    NSArray* jsFiles = [CCBFileUtil filesInResourcePathsWithExtension:@"js"];
-    for (NSString* jsFile in jsFiles)
-    {
-        [[JavaScriptAutoCompleteHandler sharedAutoCompleteHandler] loadLocalFile:[resManager toAbsolutePath:jsFile]];
-    }
-    
+
     // Update the title of the main window
     [window setTitle:[NSString stringWithFormat:@"CocosBuilder - %@", [fileName lastPathComponent]]];
     
@@ -1358,6 +1342,11 @@ static BOOL hideAllToNextSeparator;
             [self openFile:[resPath stringByAppendingPathComponent:ccbFile]];
         }
     }
+    
+    NSLog(@"WAAAAAAAAAAAA");
+    NSLog(@"WAAAAAAAAAAAA");
+    NSLog(@"WAAAAAAAAAAAA");
+    NSLog(@"WAAAAAAAAAAAA");
     
     return YES;
 }
@@ -1575,37 +1564,6 @@ static BOOL hideAllToNextSeparator;
 	}
 }
 
-- (void) openJSFile:(NSString*) fileName
-{
-    [self openJSFile:fileName highlightLine:0];
-}
-
-- (void) openJSFile:(NSString*) fileName highlightLine:(int)line
-{
-    NSURL* docURL = [[[NSURL alloc] initFileURLWithPath:fileName] autorelease];
-    
-    JavaScriptDocument* jsDoc = [[NSDocumentController sharedDocumentController] documentForURL:docURL];
-    
-    if (!jsDoc)
-    {
-        jsDoc = [[[JavaScriptDocument alloc] initWithContentsOfURL:docURL ofType:@"JavaScript" error:NULL] autorelease];
-        [[NSDocumentController sharedDocumentController] addDocument:jsDoc];
-        [jsDoc makeWindowControllers];
-    }
-    
-    [jsDoc showWindows];
-    [jsDoc setHighlightedLine:line];
-}
-
-- (void) resetJSFilesLineHighlight
-{
-    NSArray* jsDocs = [[NSDocumentController sharedDocumentController] documents];
-    for (int i = 0; i < [jsDocs count]; i++)
-    {
-        JavaScriptDocument* doc = [jsDocs objectAtIndex:i];
-        [doc setHighlightedLine:0];
-    }
-}
 
 #pragma mark Undo
 

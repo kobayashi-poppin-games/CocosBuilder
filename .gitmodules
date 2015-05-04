@@ -1,6 +1,3 @@
 [submodule "CocosBuilder/libs/ssziparchive"]
 	path = CocosBuilder/libs/ssziparchive
 	url = https://github.com/vlidholt/ssziparchive
-[submodule "CocosBuilder/libs/Fragaria"]
-	path = CocosBuilder/libs/Fragaria
-	url = https://github.com/vlidholt/Fragaria.git
