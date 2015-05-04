@@ -93,8 +93,8 @@ enum {
 @class SequencerScrubberSelectionView;
 @class MainWindow;
 @class PlayerConsoleWindow;
-@class HelpWindow;
-@class APIDocsWindow;
+
+
 @class MainToolbarDelegate;
 @class PlayerConnection;
 @class CCBSplitHorizontalView;
@@ -217,10 +217,6 @@ enum {
     // Player
     PlayerConnection* connection;
     PlayerConsoleWindow* playerConsoleWindow;
-    
-    // Help window
-    HelpWindow* helpWindow;
-    APIDocsWindow* apiDocsWindow;
     
     // About window
     AboutWindow* aboutWindow;

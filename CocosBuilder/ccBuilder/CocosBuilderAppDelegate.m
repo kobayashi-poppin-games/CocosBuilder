@@ -85,8 +85,8 @@
 #import "CustomPropSetting.h"
 #import "MainToolbarDelegate.h"
 #import "InspectorSeparator.h"
-#import "HelpWindow.h"
-#import "APIDocsWindow.h"
+
+
 #import "NodeGraphPropertySetter.h"
 #import "CCBSplitHorizontalView.h"
 #import "SpriteSheetSettingsWindow.h"
@@ -3743,25 +3743,6 @@ static BOOL hideAllToNextSeparator;
     }
 }
 
-- (IBAction)showHelp:(id)sender
-{
-    if(!helpWindow)
-    {
-        helpWindow = [[HelpWindow alloc] initWithWindowNibName:@"HelpWindow"];
-    }
-    
-    [[helpWindow window] makeKeyAndOrderFront:self];
-}
-
-- (IBAction)showAPIDocs:(id)sender
-{
-    if(!apiDocsWindow)
-    {
-        apiDocsWindow = [[APIDocsWindow alloc] initWithWindowNibName:@"APIDocsWindow"];
-    }
-    
-    [[apiDocsWindow window] makeKeyAndOrderFront:self];
-}
 
 - (IBAction)reportBug:(id)sender
 {
