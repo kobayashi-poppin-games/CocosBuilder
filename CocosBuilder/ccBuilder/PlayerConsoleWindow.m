@@ -25,8 +25,8 @@
 #import "PlayerConsoleWindow.h"
 #import "PlayerConsolePairingWindow.h"
 #import "PlayerDeviceInfo.h"
-#import "MGSFragaria.h"
-#import "SMLTextView.h"
+
+
 #import "CocosBuilderAppDelegate.h"
 #import "DebuggerTextField.h"
 #import "DebuggerConnection.h"

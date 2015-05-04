@@ -956,7 +956,7 @@ static BOOL hideAllToNextSeparator;
         [dict setObject:doc.exportPath forKey:@"exportPath"];
         [dict setObject:[NSNumber numberWithBool:doc.exportFlattenPaths] forKey:@"exportFlattenPaths"];
     }
-    
+
     return dict;
 }
 
@@ -1182,22 +1182,6 @@ static BOOL hideAllToNextSeparator;
     return NULL;
 }
 
-- (void) checkForTooManyDirectoriesInCurrentDoc
-{
-    if (!currentDocument) return;
-    
-    if ([ResourceManager sharedManager].tooManyDirectoriesAdded)
-    {
-        // Close document if it has too many sub directories
-        NSTabViewItem* item = [self tabViewItemFromDoc:currentDocument];
-        [tabView removeTabViewItem:item];
-        
-        [ResourceManager sharedManager].tooManyDirectoriesAdded = NO;
-        
-        // Notify the user
-        [[CocosBuilderAppDelegate appDelegate] modalDialogTitle:@"Too Many Directories" message:@"You have created or opened a file which is in a directory with very many sub directories. Please save your ccb-files in a directory together with the resources you use in your project."];
-    }
-}
 
 - (BOOL) checkForTooManyDirectoriesInCurrentProject
 {
@@ -1342,12 +1326,7 @@ static BOOL hideAllToNextSeparator;
             [self openFile:[resPath stringByAppendingPathComponent:ccbFile]];
         }
     }
-    
-    NSLog(@"WAAAAAAAAAAAA");
-    NSLog(@"WAAAAAAAAAAAA");
-    NSLog(@"WAAAAAAAAAAAA");
-    NSLog(@"WAAAAAAAAAAAA");
-    
+
     return YES;
 }
 
@@ -1365,7 +1344,16 @@ static BOOL hideAllToNextSeparator;
     
     [self prepareForDocumentSwitch];
     
-    NSMutableDictionary* doc = [NSMutableDictionary dictionaryWithContentsOfFile:fileName];
+//    NSMutableDictionary* doc = [NSMutableDictionary dictionaryWithContentsOfFile:fileName];
+    
+    NSLog(@"OPEN %@",fileName);
+    
+    NSData *data = [NSData dataWithContentsOfFile:fileName];
+
+    NSMutableDictionary* doc = [NSJSONSerialization JSONObjectWithData:data options:nil error:nil];
+    
+    NSLog(@"%@",doc);
+
     
     CCBDocument* newDoc = [[[CCBDocument alloc] init] autorelease];
     newDoc.fileName = fileName;
@@ -1378,8 +1366,6 @@ static BOOL hideAllToNextSeparator;
      
     [self addDocument:newDoc];
     self.hasOpenedDocument = YES;
-    
-    [self checkForTooManyDirectoriesInCurrentDoc];
     
     // Remove selections
     [self setSelectedNodes:NULL];
@@ -1394,7 +1380,16 @@ static BOOL hideAllToNextSeparator;
 {
     NSMutableDictionary* doc = [self docDataFromCurrentNodeGraph];
      
-    [doc writeToFile:fileName atomically:YES];
+//    [doc writeToFile:fileName atomically:YES];
+    
+    // yoyo! json!
+    NSData *data = [NSJSONSerialization dataWithJSONObject:doc options:0 error:nil];
+//    NSLog(@"%@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
+
+    
+    [data writeToFile:fileName atomically:YES];
+
+    
     
     currentDocument.fileName = fileName;
     currentDocument.docData = doc;
@@ -1501,8 +1496,6 @@ static BOOL hideAllToNextSeparator;
     
     [[CocosScene cocosScene] setStageZoom:1];
     [[CocosScene cocosScene] setScrollOffset:ccp(0,0)];
-    
-    [self checkForTooManyDirectoriesInCurrentDoc];
 }
 
 /*
