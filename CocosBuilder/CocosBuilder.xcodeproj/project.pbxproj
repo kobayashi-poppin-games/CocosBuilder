@@ -113,6 +113,7 @@
 		92BB443A1AF79992000099C0 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 92BB442B1AF79992000099C0 /* Utils.m */; };
 		92BB443B1AF79992000099C0 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 92BB442D1AF79992000099C0 /* README.md */; };
 		92BB443E1AF79AFE000099C0 /* CCFontDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 92BB443D1AF79AFE000099C0 /* CCFontDefinition.m */; };
+		92D68E171AF7C5080071523E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92D68E161AF7C5080071523E /* Images.xcassets */; };
 		A09AB6AF14E9935F009C8B91 /* aabb.c in Sources */ = {isa = PBXBuildFile; fileRef = A09AB69F14E9935F009C8B91 /* aabb.c */; };
 		A09AB6B014E9935F009C8B91 /* ChangeLog in Resources */ = {isa = PBXBuildFile; fileRef = A09AB6A014E9935F009C8B91 /* ChangeLog */; };
 		A09AB6B114E9935F009C8B91 /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = A09AB6A114E9935F009C8B91 /* CMakeLists.txt */; };
@@ -987,6 +988,7 @@
 		92BB442D1AF79992000099C0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		92BB443C1AF79AFE000099C0 /* CCFontDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCFontDefinition.h; sourceTree = "<group>"; };
 		92BB443D1AF79AFE000099C0 /* CCFontDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCFontDefinition.m; sourceTree = "<group>"; };
+		92D68E161AF7C5080071523E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = CocosBuilder/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		A09AB68F14E9935F009C8B91 /* aabb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aabb.h; sourceTree = "<group>"; };
 		A09AB69114E9935F009C8B91 /* mat4stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mat4stack.h; sourceTree = "<group>"; };
 		A09AB69214E9935F009C8B91 /* matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matrix.h; sourceTree = "<group>"; };
@@ -2401,6 +2403,7 @@
 				E335CB071577C55F00A612EE /* Node info */,
 				776041E21498F5A70078095D /* Util */,
 				776041EE1498FC320078095D /* GUI Util */,
+				92D68E161AF7C5080071523E /* Images.xcassets */,
 				7789ABC9133AA82000CEFCC7 /* Supporting Files */,
 			);
 			name = CocosBuilder;
@@ -4440,6 +4443,7 @@
 				E3DA6FFA16CB2B8700B12FFB /* InspectorPopoverSpriteFrame.xib in Resources */,
 				E3DA6FFC16CB2BEB00B12FFB /* InspectorPopoverByte.xib in Resources */,
 				E3DA6FFE16CB2C3C00B12FFB /* InspectorPopoverColor3.xib in Resources */,
+				92D68E171AF7C5080071523E /* Images.xcassets in Resources */,
 				E312972E16CC33B200A09155 /* SequencerPopoverBlock.xib in Resources */,
 				E312973516CC677400A09155 /* SequencerPopoverSound.xib in Resources */,
 				E3A4747116D4389D00DB0D61 /* README.md in Resources */,
@@ -5353,6 +5357,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5389,6 +5394,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
