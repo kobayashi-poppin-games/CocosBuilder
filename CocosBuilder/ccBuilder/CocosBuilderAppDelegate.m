@@ -91,7 +91,7 @@
 #import "CCBSplitHorizontalView.h"
 #import "SpriteSheetSettingsWindow.h"
 #import "AboutWindow.h"
-#import "CCBHTTPServer.h"
+
 #import "JavaScriptAutoCompleteHandler.h"
 #import "CCBFileUtil.h"
 #import "ResourceManagerPreviewView.h"
@@ -1284,9 +1284,6 @@ static BOOL hideAllToNextSeparator;
     [[JavaScriptAutoCompleteHandler sharedAutoCompleteHandler] removeLocalFiles];
     
     [window setTitle:@"CocosBuilder"];
-
-    // Stop local web server
-    [[CCBHTTPServer sharedHTTPServer] stop];
     
     // Remove resource paths
     self.projectSettings = NULL;
@@ -1333,10 +1330,6 @@ static BOOL hideAllToNextSeparator;
     
     // Update the title of the main window
     [window setTitle:[NSString stringWithFormat:@"CocosBuilder - %@", [fileName lastPathComponent]]];
-
-    // Start local web server
-    NSString* docRoot = [projectSettings.publishDirectoryHTML5 absolutePathFromBaseDirPath:[projectSettings.projectPath stringByDeletingLastPathComponent]];
-    [[CCBHTTPServer sharedHTTPServer] start:docRoot];
     
     // Open ccb file for project if there is only one
     NSArray* resPaths = project.absoluteResourcePaths;
@@ -2254,7 +2247,6 @@ static BOOL hideAllToNextSeparator;
     // Run in Browser
     if (publisher.runAfterPublishing && publisher.browser)
     {
-        [[CCBHTTPServer sharedHTTPServer] openBrowser:publisher.browser];
         [self updateDefaultBrowser];
     }
     
@@ -3741,17 +3733,6 @@ static BOOL hideAllToNextSeparator;
     {
         [[NSApplication sharedApplication] terminate:self];
     }
-}
-
-
-- (IBAction)reportBug:(id)sender
-{
-    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"https://github.com/cocos2d/CocosBuilder/issues"]];
-}
-
-- (IBAction)visitCommunity:(id)sender
-{
-    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://www.cocos2d-iphone.org/forum/forum/16"]];
 }
 
 #pragma mark Debug

@@ -1996,24 +1996,7 @@
 						<reference key="NSTarget" ref="992780483"/>
 						<object class="NSMenu" key="NSSubmenu" id="992780483">
 							<string key="NSTitle">Help</string>
-							<array class="NSMutableArray" key="NSMenuItems">
-								<object class="NSMenuItem" id="682344972">
-									<reference key="NSMenu" ref="992780483"/>
-									<string key="NSTitle">Report a Bug</string>
-									<string key="NSKeyEquiv"/>
-									<int key="NSMnemonicLoc">2147483647</int>
-									<reference key="NSOnImage" ref="35465992"/>
-									<reference key="NSMixedImage" ref="502551668"/>
-								</object>
-								<object class="NSMenuItem" id="29657551">
-									<reference key="NSMenu" ref="992780483"/>
-									<string key="NSTitle">Community/Support</string>
-									<string key="NSKeyEquiv"/>
-									<int key="NSMnemonicLoc">2147483647</int>
-									<reference key="NSOnImage" ref="35465992"/>
-									<reference key="NSMixedImage" ref="502551668"/>
-								</object>
-							</array>
+							<array class="NSMutableArray" key="NSMenuItems"/>
 							<string key="NSName">_NSHelpMenu</string>
 						</object>
 					</object>
@@ -2413,7 +2396,7 @@
 																	<string key="NSFrameSize">{250, 408}</string>
 																	<reference key="NSSuperview" ref="88756307"/>
 																	<reference key="NSWindow"/>
-																	<reference key="NSNextKeyView" ref="1032953836"/>
+																	<reference key="NSNextKeyView" ref="987023980"/>
 																	<bool key="NSEnabled">YES</bool>
 																	<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
 																	<bool key="NSControlAllowsExpansionToolTips">YES</bool>
@@ -2542,7 +2525,7 @@
 													<string key="NSFrameSize">{250, 408}</string>
 													<reference key="NSSuperview" ref="552508876"/>
 													<reference key="NSWindow"/>
-													<reference key="NSNextKeyView" ref="987023980"/>
+													<reference key="NSNextKeyView" ref="88756307"/>
 													<int key="NSsFlags">133648</int>
 													<reference key="NSVScroller" ref="1032953836"/>
 													<reference key="NSHScroller" ref="987023980"/>
@@ -3696,7 +3679,7 @@
 													<string key="NSFrameSize">{233, 550}</string>
 													<reference key="NSSuperview" ref="650525934"/>
 													<reference key="NSWindow"/>
-													<reference key="NSNextKeyView" ref="677469954"/>
+													<reference key="NSNextKeyView" ref="885143300"/>
 												</object>
 											</array>
 											<string key="NSFrame">{{1, 1}, {298, 678}}</string>
@@ -3714,7 +3697,6 @@
 											<string key="NSFrame">{{284, 1}, {15, 678}}</string>
 											<reference key="NSSuperview" ref="949082143"/>
 											<reference key="NSWindow"/>
-											<reference key="NSNextKeyView"/>
 											<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
 											<string key="NSControlAction">_doScroller:</string>
 											<reference key="NSControlTarget" ref="949082143"/>
@@ -3741,7 +3723,7 @@
 									<string key="NSFrameSize">{300, 680}</string>
 									<reference key="NSSuperview" ref="826880190"/>
 									<reference key="NSWindow"/>
-									<reference key="NSNextKeyView" ref="885143300"/>
+									<reference key="NSNextKeyView" ref="650525934"/>
 									<int key="NSsFlags">133650</int>
 									<reference key="NSVScroller" ref="677469954"/>
 									<reference key="NSHScroller" ref="885143300"/>
@@ -5284,22 +5266,6 @@
 						<reference key="destination" ref="634165759"/>
 					</object>
 					<int key="connectionID">1774</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">reportBug:</string>
-						<reference key="source" ref="976324537"/>
-						<reference key="destination" ref="682344972"/>
-					</object>
-					<int key="connectionID">1778</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">visitCommunity:</string>
-						<reference key="source" ref="976324537"/>
-						<reference key="destination" ref="29657551"/>
-					</object>
-					<int key="connectionID">1779</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
@@ -6948,10 +6914,7 @@
 					<object class="IBObjectRecord">
 						<int key="objectID">491</int>
 						<reference key="object" ref="992780483"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="682344972"/>
-							<reference ref="29657551"/>
-						</array>
+						<array class="NSMutableArray" key="children"/>
 						<reference key="parent" ref="448692316"/>
 					</object>
 					<object class="IBObjectRecord">
@@ -8293,16 +8256,6 @@
 						<reference key="parent" ref="915135864"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">1776</int>
-						<reference key="object" ref="682344972"/>
-						<reference key="parent" ref="992780483"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">1777</int>
-						<reference key="object" ref="29657551"/>
-						<reference key="parent" ref="992780483"/>
-					</object>
-					<object class="IBObjectRecord">
 						<int key="objectID">1780</int>
 						<reference key="object" ref="495821325"/>
 						<reference key="parent" ref="466310130"/>
@@ -9008,8 +8961,6 @@
 				<string key="1768.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="1769.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="1770.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="1776.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="1777.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="1780.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="1782.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="1785.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -9673,15 +9624,11 @@
 						<string key="pressedToolSelection:">id</string>
 						<string key="pressedZoom:">id</string>
 						<string key="redo:">id</string>
-						<string key="reportBug:">id</string>
 						<string key="runProject:">id</string>
 						<string key="saveAllDocuments:">id</string>
 						<string key="saveDocument:">id</string>
 						<string key="saveDocumentAs:">id</string>
-						<string key="showAPIDocs:">id</string>
-						<string key="showHelp:">id</string>
 						<string key="undo:">id</string>
-						<string key="visitCommunity:">id</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="actionInfosByName">
 						<object class="IBActionInfo" key="copy:">
@@ -9940,10 +9887,6 @@
 							<string key="name">redo:</string>
 							<string key="candidateClassName">id</string>
 						</object>
-						<object class="IBActionInfo" key="reportBug:">
-							<string key="name">reportBug:</string>
-							<string key="candidateClassName">id</string>
-						</object>
 						<object class="IBActionInfo" key="runProject:">
 							<string key="name">runProject:</string>
 							<string key="candidateClassName">id</string>
@@ -9960,20 +9903,8 @@
 							<string key="name">saveDocumentAs:</string>
 							<string key="candidateClassName">id</string>
 						</object>
-						<object class="IBActionInfo" key="showAPIDocs:">
-							<string key="name">showAPIDocs:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="showHelp:">
-							<string key="name">showHelp:</string>
-							<string key="candidateClassName">id</string>
-						</object>
 						<object class="IBActionInfo" key="undo:">
 							<string key="name">undo:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="visitCommunity:">
-							<string key="name">visitCommunity:</string>
 							<string key="candidateClassName">id</string>
 						</object>
 					</dictionary>
