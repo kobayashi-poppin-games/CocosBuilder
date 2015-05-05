@@ -137,7 +137,9 @@
     }
     
     // Load src file
-    NSMutableDictionary* doc = [NSMutableDictionary dictionaryWithContentsOfFile:srcFile];
+//    NSMutableDictionary* doc = [NSMutableDictionary dictionaryWithContentsOfFile:srcFile];
+    NSMutableDictionary* doc = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:srcFile] options:nil error:nil];
+    
     if (!doc)
     {
         [warnings addWarningWithDescription:[NSString stringWithFormat:@"Failed to publish ccb-file. File is in invalid format: %@",srcFile] isFatal:NO];

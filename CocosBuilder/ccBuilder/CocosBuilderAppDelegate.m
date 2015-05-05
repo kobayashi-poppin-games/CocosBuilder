@@ -1347,11 +1347,8 @@ static BOOL hideAllToNextSeparator;
 //    NSMutableDictionary* doc = [NSMutableDictionary dictionaryWithContentsOfFile:fileName];
     
     NSLog(@"OPEN %@",fileName);
-    
     NSData *data = [NSData dataWithContentsOfFile:fileName];
-
     NSMutableDictionary* doc = [NSJSONSerialization JSONObjectWithData:data options:nil error:nil];
-    
     NSLog(@"%@",doc);
 
     
