@@ -143,6 +143,45 @@
 			<key>name</key>
 			<string>string</string>
 		</dict>
+        <dict>
+            <key>defaultSerialization</key>
+            <integer>255</integer>
+            <key>default</key>
+            <integer>255</integer>
+            <key>displayName</key>
+            <string>Shadow opacity</string>
+            <key>type</key>
+            <string>Byte</string>
+            <key>name</key>
+            <string>shadowOpacity</string>
+        </dict>
+        <dict>
+            <key>default</key>
+            <array>
+                <integer>0</integer>
+                <integer>0</integer>
+            </array>
+            <key>displayName</key>
+            <string>ShadowOffset</string>
+            <key>type</key>
+            <string>Size</string>
+            <key>name</key>
+            <string>shadowOffset</string>
+        </dict>
+        <dict>
+			<key>default</key>
+			<array>
+				<integer>255</integer>
+                <integer>255</integer>
+                <integer>255</integer>
+			</array>
+			<key>displayName</key>
+			<string>Fill Color</string>
+			<key>type</key>
+			<string>Color3</string>
+			<key>name</key>
+			<string>fillColor</string>
+		</dict>
 	</array>
 </dict>
 </plist>

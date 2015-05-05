@@ -26,6 +26,10 @@
 
 @interface CCBPLabelTTF : CCLabelTTF
 
+@property (nonatomic,assign) ccColor3B fillColor;
+@property (nonatomic,assign) GLubyte shadowOpacity;
+@property (nonatomic,assign) CGSize shadowOffset;
+
 // Add property to maintain backwards compatibility
 @property (nonatomic,assign) int alignment;
 

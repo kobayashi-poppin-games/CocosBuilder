@@ -1345,13 +1345,8 @@ static BOOL hideAllToNextSeparator;
     [self prepareForDocumentSwitch];
     
 //    NSMutableDictionary* doc = [NSMutableDictionary dictionaryWithContentsOfFile:fileName];
-    
-    NSLog(@"OPEN %@",fileName);
-    NSData *data = [NSData dataWithContentsOfFile:fileName];
-    NSMutableDictionary* doc = [NSJSONSerialization JSONObjectWithData:data options:nil error:nil];
-    NSLog(@"%@",doc);
+    NSMutableDictionary* doc = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:fileName] options:nil error:nil];
 
-    
     CCBDocument* newDoc = [[[CCBDocument alloc] init] autorelease];
     newDoc.fileName = fileName;
     newDoc.docData = doc;

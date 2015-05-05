@@ -82,4 +82,20 @@
     return iRight;
 }
 
+-(CCArray*)children
+{
+    CCArray *a = [CCArray array];
+    
+    for(id i in _children){
+
+        if(i == scale9Image){
+            continue;
+        }
+        
+        [a addObject:i];
+    }
+    
+    return a;
+}
+
 @end

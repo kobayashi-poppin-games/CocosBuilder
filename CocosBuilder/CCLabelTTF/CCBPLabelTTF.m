@@ -26,6 +26,48 @@
 
 @implementation CCBPLabelTTF
 
+-(ccColor3B)fillColor
+{
+    return _textFillColor;
+}
+
+-(void) setFillColor:(ccColor3B)fillColor
+{
+    [self setFontFillColor:fillColor updateImage:YES];
+}
+
+- (void) setShadowOpacity:(GLubyte)shadowOpacity
+{
+    if(shadowOpacity == 0){
+        [self disableShadowAndUpdateImage:YES];
+    }else{
+        [self enableShadowWithOffset:_shadowOffset
+                             opacity: shadowOpacity/255.f
+                                blur:_shadowBlur
+                         updateImage:YES];
+    }
+}
+
+-(GLubyte)shadowOpacity
+{
+    return 255*_shadowOpacity;
+}
+
+-(void)setShadowOffset:(CGSize)shadowOffset
+{
+    if(_shadowOpacity!=0){
+        [self enableShadowWithOffset:shadowOffset
+                             opacity:_shadowOpacity
+                                blur:_shadowBlur
+                         updateImage:YES];
+    }
+}
+
+-(CGSize)shadowOffset
+{
+    return _shadowOffset;
+}
+
 - (void) setAlignment:(int)alignment
 {
     self.horizontalAlignment = alignment;
